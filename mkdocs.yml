@@ -1,0 +1,106 @@
+site_name: Systèmes Embarqués Reconfigurables
+site_url: https://pjlapray.github.io/ens/
+repo_url: https://github.com/pjlapray/ens
+repo_name: "P-J. Lapray"
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: fr
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - navigation.pruning 
+    - navigation.expand
+    # NOUVELLES FONCTIONS INTÉRESSANTES :
+    #- navigation.sections      # Regroupe visuellement les éléments du menu de gauche
+    - navigation.indexes       # Permet de cliquer sur le titre d'une section pour aller à sa page d'accueil
+    - navigation.tracking      # Met à jour l'URL selon le scroll pour faciliter le partage
+    - toc.follow               # La table des matières à droite suit le défilement
+    - content.tooltips         # Affiche des info-bulles pour les abréviations ou glossaires
+    - search.highlight         # Surligne les termes recherchés dans les pages
+    - search.share             # Permet de partager un lien de recherche
+
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Mode sombre
+    - scheme: slate
+      primary: grey
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Mode clair
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Accueil: index.md
+  - "Électronique Numérique":
+      - 1. Généralités: 
+          - Logique Combinatoire vs Séquentielle: en/generalites.md
+      - 2. Logique Combinatoire: 
+          - Composants Logiques Fondamentaux: en/logique_combinatoire.md
+          - Tableau de Karnaugh: en/tableau_de_karnaugh.md
+      - 3. Logique Séquentielle: 
+          - Composants Logiques Fondamentaux: en/logique_sequentielle.md
+          - Métastabilité: en/metastabilite.md
+
+  - "Syst. Emb. Reconfig. 1":
+      - 1. FPGA : ser1/fpga.md
+      - 2. VHDL: ser1/vhdl.md
+      - 3. Simulation VHDL: ser1/simulation.md
+      - 4. Synthèse et Implémentation:
+          - Synthèse: ser1/synthese.md
+          - Affectation des broches: ser1/brochage.md
+          - Implémentation: ser1/implementation.md
+          - Configuration du FPGA: ser1/configuration.md
+
+  - "Syst. Emb. Reconfig. 2":
+      - 1. SoC-FPGA: ser2/soc_fpga.md
+      - 2. Interfaçage SoC et FPGA: ser2/interfacage.md
+      - 3. Platform Designer: ser2/platform_designer.md
+      - 4. CPUlator: ser2/cpulator.md
+
+extra_css:
+  - css/custom.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
+  - js/wavedrom_loader.js
+  
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - markdown_wavedrom
+
+extra:
+  generator: false
