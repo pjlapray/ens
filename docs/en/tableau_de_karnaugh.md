@@ -30,7 +30,7 @@ Pour extraire une équation minimale depuis un tableau de Karnaugh, respectez to
 Sélectionnez les cases à **1** en cliquant dessus. L'équation simplifiée ainsi que les regroupements optimaux sont calculés dynamiquement en temps réel.
 
 <div style="background-color: var(--md-code-bg-color, #f8f9fa); padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; margin: 1em 0; color: #222;">
-  <h3 style="margin-top: 0; text-align: center;">K-Map 4 Variables : S(A, B, C, D)</h3>
+  <h3 class="arithmatex" style="margin-top: 0; text-align: center;">Tableau de Karnaugh à 4 Variables : $S(A, B, C, D)$</h3>
   
   <div style="overflow-x: auto;">
     <table id="kmap-table" style="margin: 15px auto; text-align: center; border-collapse: collapse; background: transparent;">
