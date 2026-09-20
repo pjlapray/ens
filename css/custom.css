@@ -1,0 +1,79 @@
+/* Masquer le titre redondant dans la barre de navigation de gauche */
+.md-nav__title[for="__drawer"] {
+    display: none;
+}
+
+/* Ajuster l'espacement pour un rendu plus compact */
+.md-nav__list {
+    margin-top: 0;
+}
+
+/* Améliorer la visibilité des onglets actifs en haut */
+.md-tabs__link--active {
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+}
+
+/* --- AGRANDISSEMENT DU LOGO --- */
+/* On augmente ici la taille à 4.5rem pour qu'il soit bien visible */
+.md-header__button.md-logo img, 
+.md-logo img {
+    height: 2.9rem !important;
+    width: auto !important;
+    display: block;
+}
+
+.md-header__button.md-logo {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Taille du logo pour les tablettes et mobiles */
+@media screen and (max-width: 76.25em) {
+    .md-header__button.md-logo img,
+    .md-logo img {
+        height: 2.5rem !important;
+    }
+}
+
+
+/* --- STYLE DES LIENS DE TITRE (PERMALINKS) --- */
+.md-content__inner h1:hover .headerlink,
+.md-content__inner h2:hover .headerlink,
+.md-content__inner h3:hover .headerlink,
+.md-content__inner h4:hover .headerlink {
+    visibility: visible;
+    opacity: 1;
+}
+
+.headerlink {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    margin-left: 0.5rem;
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+}
+
+.headerlink::after {
+    /*content: "🔗";*/
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+/* Cette classe est celle générée par le script wavedrom_loader.js */
+.WaveDrom, .wavedrom {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 20px 0 !important;
+}
+
+/* Force les SVG à se comporter correctement au centre */
+.WaveDrom svg, .wavedrom svg {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
