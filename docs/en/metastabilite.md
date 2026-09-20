@@ -71,9 +71,9 @@ Le temps nécessaire au signal électrique pour traverser les transistors et sta
 
 ### ⚠️ Le phénomène de Métastabilité
 
-En logique séquentielle, la donnée $D$ doit rester parfaitement **stable** pendant une fenêtre temporelle stricte autour du front d'horloge :
-	* 1. **Temps de setup ($t_{su}$) :** La donnée doit être stable *avant* le front d'horloge.
-	* 2. **Temps de hold ($t_{h}$) :** La donnée doit rester stable *après* le front d'horloge.
+* En logique séquentielle, la donnée $D$ doit rester parfaitement **stable** pendant une fenêtre temporelle stricte autour du front d'horloge :
+	*  **Temps de setup ($t_{su}$) :** La donnée doit être stable *avant* le front d'horloge.
+	*  **Temps de hold ($t_{h}$) :** La donnée doit rester stable *après* le front d'horloge.
 
 Si l'entrée $D$ change d'état à l'intérieur de cette fenêtre critique, la bascule ne parvient pas à décider si la valeur capturée est un `0` ou un `1`. Elle entre alors dans un état instable appelé **métastabilité**.
 
