@@ -51,15 +51,8 @@ L'additionneur complet est l'unité de base du calcul numérique. Contrairement 
     )
 	
 === ":material-chip: Simulation Logique (CircuitVerse)"
-<div class="circuit-container" style="text-align: center; margin: 20px 0;">
-    <iframe src="https://circuitverse.org/simulator/embed/elec-num-partie-2?theme=default&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true" 
-            style="border: 2px solid #2c3e50; border-radius: 10px;" 
-            height="400" 
-            width="100%" 
-            allowFullScreen>
-    </iframe>
-</div>
-	
+	<iframe src="https://circuitverse.org/users/255839/projects/additionneur-complet-9a573fbc-972c-43cd-ae37-bbbd50f4fa93/simulator/embed?theme=&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: ; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="100%" allowFullScreen></iframe>
+
 === ":material-chip: Simulation Techno (Tinkercad)"
     <div style="border: 1px solid #dee2e6; border-radius: 8px; padding: 10px; background: #f8f9fa; margin: 20px 0; text-align: center;">
         <iframe width="725" height="453" src="https://www.tinkercad.com/embed/hbotEYDtzwv?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -85,14 +78,18 @@ Ces circuits ne transforment pas l'information, ils la dirigent. Ils sont essent
 Le Multiplexeur agit comme un entonnoir : il sélectionne l'une des entrées pour la diriger vers la sortie unique, selon l'état d'une entrée de sélection ($Sel$).
 
 
-
-* **Application :** Sélectionner quelle variable afficher sur un écran unique.
-
+!!! info "Application"
+	* **Application :** 
+		* Routage de données : Sélectionner quelle variable afficher sur un écran unique.
+		* Conversion parallèle-série : Il transforme des mots de données parallèles en un flux de données série.
 ### Le Démultiplexeur (DEMUX)
-C'est l'inverse du MUX : il dirige une donnée d'entrée vers l'une des multiples sorties possibles.
+C'est l'inverse du MUX : il dirige la donnée d'entrée vers l'une des multiples sorties possibles.
 
-
-
+!!! info "Application"
+	* **Application :** 
+		* Adressage et sélection de mémoire : Il permet de choisir un registre ou une position de mémoire spécifique à lire ou à écrire dans un système.
+		* Affichage multiplexé : Il pilote alternativement plusieurs afficheurs en commutant l'alimentation ou les données de manière séquentielle.
+	
 ### Le Décodeur
 Le décodeur active une sortie spécifique parmi $2^n$ en fonction d'un code binaire en entrée.
 
@@ -102,5 +99,5 @@ Le décodeur active une sortie spécifique parmi $2^n$ en fonction d'un code bin
 
 
 
-!!! info "Le saviez-vous ?"
+!!! info "Application"
     Un décodeur est souvent utilisé pour transformer un nombre binaire en un affichage lisible (par exemple, un décodeur 7 segments pour afficher les chiffres).

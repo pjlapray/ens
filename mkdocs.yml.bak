@@ -112,3 +112,9 @@ plugins:
       server_url: https://kroki.io
       fence_prefix: ''
       
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0.16.8/dist/katex.min.js
+  - https://unpkg.com/katex@0.16.8/dist/contrib/auto-render.min.js
+extra_css:
+  - https://unpkg.com/katex@0.16.8/dist/katex.min.js
