@@ -52,12 +52,12 @@ L'additionneur complet est l'unité de base du calcul numérique. Contrairement 
 	
 === ":material-chip: Simulation Logique (CircuitVerse)"
 <div class="circuit-container" style="text-align: center; margin: 20px 0;">
-	<iframe src="https://circuitverse.org/users/255839/projects/additionneur-complet-9a573fbc-972c-43cd-ae37-bbbd50f4fa93/simulator/embed" 
-			style="border: 2px solid #2c3e50; border-radius: 10px;" 
-			height="400" 
-			width="100%" 
-			allowFullScreen>
-	</iframe>
+    <iframe src="https://circuitverse.org/simulator/embed/elec-num-partie-2?theme=default&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true" 
+            style="border: 2px solid #2c3e50; border-radius: 10px;" 
+            height="400" 
+            width="100%" 
+            allowFullScreen>
+    </iframe>
 </div>
 	
 === ":material-chip: Simulation Techno (Tinkercad)"

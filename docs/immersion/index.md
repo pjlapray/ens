@@ -1,5 +1,7 @@
 # Immersion ASE
 
+![Prototype Serre Connectée](fig1.jpg)
+
 ## 🌿 Liste du matériel : Prototype Serre Connectée
 
 Ce tableau présente les composants nécessaires pour le nouveau support pédagogique de serre automatisée. Ce système est conçu pour être alimenté par la **platine 3.3V / 5V / 12V** de JJ.
