@@ -19,14 +19,12 @@ theme:
     - content.code.copy
     - navigation.pruning 
     - navigation.expand
-    # NOUVELLES FONCTIONS INTÉRESSANTES :
-    #- navigation.sections      # Regroupe visuellement les éléments du menu de gauche
-    - navigation.indexes       # Permet de cliquer sur le titre d'une section pour aller à sa page d'accueil
-    - navigation.tracking      # Met à jour l'URL selon le scroll pour faciliter le partage
-    - toc.follow               # La table des matières à droite suit le défilement
-    - content.tooltips         # Affiche des info-bulles pour les abréviations ou glossaires
-    - search.highlight         # Surligne les termes recherchés dans les pages
-    - search.share             # Permet de partager un lien de recherche
+    - navigation.indexes
+    - navigation.tracking
+    - toc.follow
+    - content.tooltips
+    - search.highlight
+    - search.share
 
   palette:
     - scheme: default
@@ -77,11 +75,12 @@ extra_css:
   - css/custom.css
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
   - js/wavedrom_loader.js
-  
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -101,8 +100,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - markdown_wavedrom
-  - pymdownx.arithmatex:
-      generic: true
+
 extra:
   generator: false
   
@@ -111,4 +109,3 @@ plugins:
   - kroki:
       server_url: https://kroki.io
       fence_prefix: ''
-      

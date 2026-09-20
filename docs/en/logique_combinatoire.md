@@ -91,8 +91,8 @@ C'est l'inverse du MUX : il dirige la donnée d'entrée vers l'une des multiples
 ### Le Décodeur
 Le décodeur active une sortie spécifique parmi $2^n$ en fonction d'un code binaire en entrée.
 
-* **Exemple (2 vers 4) :** * Entrée `00` $\rightarrow$ Sortie 0 active.
-
+* **Exemple (2 vers 4) :**
+	* Entrée `00` $\rightarrow$ Sortie 0 active.
     * Entrée `10` $\rightarrow$ Sortie 2 active.
 
 
