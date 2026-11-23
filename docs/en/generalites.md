@@ -34,7 +34,7 @@ Le circuit ci-dessous permet de comparer deux comportements à partir d'un bouto
 		</iframe>
 	</div>
 
-=== ":material-chip: Simulation Techno (Tinkercad)"
+=== ":material-chip: Simulation Techno (Tinkercad)" 
 
     <div style="border: 1px solid #dee2e6; border-radius: 8px; padding: 10px; background: #f8f9fa; margin: 20px 0;">
         <iframe width="725" height="453" src="https://www.tinkercad.com/things/7Fz64b6KIkO-logiquecombinatoirevslogiquesequentielle" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
