@@ -1,6 +1,8 @@
 installer mkdocs (pip install mkdocs mkdocs-material)
 Félicitations ! Votre site est officiellement en ligne à l'adresse https://pjlapray.github.io/Site_web/.
 
+C:\Users\Lapray\Desktop\Bazar\Site_web\rech> git remote add origin https://github.com/pjlapray/rech.git
+
 git add .
 git commit -m "1"
 git push
